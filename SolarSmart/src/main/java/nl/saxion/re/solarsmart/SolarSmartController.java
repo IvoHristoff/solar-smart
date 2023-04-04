@@ -2,41 +2,49 @@ package nl.saxion.re.solarsmart;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
-import javafx.scene.control.Label;
-import javafx.stage.Stage;
-
-
-
-
-import java.io.IOException;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 
 public class SolarSmartController {
-    @FXML
-    private Label welcomeText;
 
+    // --"T"-- stands for TextField //
     @FXML
-    protected void onHelloButtonClick() throws IOException {
-        String componentToOpen = "test-window";
-        String windowTitle = "Test Window";
-        boolean openInNewWindow = true;
-        int width = 800;
-        int height = 600;
+    public TextField firstNameT;
+    @FXML
+    public TextField lastNameT;
+    @FXML
+    public TextField roofWT;
+    @FXML
+    public TextField roofHT;
+    @FXML
+    public TextField powerConsT;
+    @FXML
+    public Button confirmB;
 
-        Stage stage;
-        if (openInNewWindow) {
-            stage = new Stage();
-        } else {
-            stage = (Stage) welcomeText.getScene().getWindow();
-        }
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource(componentToOpen + ".fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), width, height);
-        stage.setTitle(windowTitle);
-        stage.setScene(scene);
-        stage.show();
-    }
+    public String firstName;
+
+    public String lastName;
+
+    public double roofW;
+
+    public double roofH;
+
+    public int powerCons;
 
     public void onConfirm(ActionEvent actionEvent){
+        firstName = firstNameT.getText();
+        System.out.println("Mr/Ms " + firstName);
+
+        lastName = lastNameT.getText();
+        System.out.println(lastName);
+
+        roofW = Double.parseDouble(roofWT.getText());
+        System.out.println(roofW + "m Width");
+
+        roofH = Double.parseDouble(roofHT.getText());
+        System.out.println(roofH + "m Height");
+
+        powerCons = Integer.parseInt(powerConsT.getText());
+        System.out.println(powerCons + " Watts");
     }
 }
