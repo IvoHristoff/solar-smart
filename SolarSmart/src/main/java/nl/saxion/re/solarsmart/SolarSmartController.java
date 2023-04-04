@@ -18,8 +18,7 @@ public class SolarSmartController {
     public TextField roofHT;
     @FXML
     public TextField powerConsT;
-    @FXML
-    public Button confirmB;
+
 
     public String firstName;
 
