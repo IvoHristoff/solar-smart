@@ -8,7 +8,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class HelloController {
+public class SolarSmartController {
     @FXML
     private Label welcomeText;
 
