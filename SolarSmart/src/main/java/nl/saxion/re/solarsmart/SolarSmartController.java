@@ -1,10 +1,14 @@
 package nl.saxion.re.solarsmart;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
+
+
+
 
 import java.io.IOException;
 
@@ -31,5 +35,8 @@ public class SolarSmartController {
         stage.setTitle(windowTitle);
         stage.setScene(scene);
         stage.show();
+    }
+
+    public void onConfirm(ActionEvent actionEvent){
     }
 }

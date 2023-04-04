@@ -18,6 +18,7 @@ public class TextFieldController {
     private TextField roofWT;
     private TextField roofHT;
     private TextField powerConsT;
+    private Button confirm;
     // --"T"-- stands for TextField //
 
     // @FXML
@@ -28,15 +29,15 @@ public class TextFieldController {
     double roofH;
     int powerCons;
 
-
-    public void confirm(ActionEvent event) {
+    @FXML
+    public void onConfirm(ActionEvent event){
 
         //try {
-        firstName = myTextField.getText();
-        lastName = myTextField.getText();
-        roofW = Integer.parseInt(myTextField.getText());
-        roofH = Integer.parseInt(myTextField.getText());
-        powerCons = Integer.parseInt(myTextField.getText());
+        firstName = firstNameT.getText();
+        lastName = lastNameT.getText();
+        roofW = Double.parseDouble(roofWT.getText());
+        roofH = Double.parseDouble(roofHT.getText());
+        powerCons = Integer.parseInt(powerConsT.getText());
 
            /* if(age >= 18) {
                 myLabel.setText("You are now signed up!");

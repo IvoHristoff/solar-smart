@@ -7,8 +7,8 @@
 <GridPane fx:id="gridPane" prefHeight="328.0" prefWidth="375.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.saxion.re.solarsmart.SolarSmartController">
 
     <columnConstraints>
-        <ColumnConstraints hgrow="SOMETIMES" maxWidth="209.0" minWidth="200.0" prefWidth="163.0" />
-        <ColumnConstraints hgrow="SOMETIMES" maxWidth="266.0" minWidth="166.0" prefWidth="212.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="275.0" minWidth="200.0" prefWidth="234.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="266.0" minWidth="100.0" prefWidth="141.0" />
     </columnConstraints>
     <rowConstraints>
         <RowConstraints minHeight="10" vgrow="SOMETIMES" />
@@ -22,19 +22,16 @@
       <GridPane.margin>
          <Insets left="10.0" />
       </GridPane.margin></Label>
-    <TextField fx:id="firstName" maxHeight="30.0" maxWidth="60.0" onAction="#confirm">
+    <TextField fx:id="firstNameT" maxHeight="30.0" maxWidth="60.0">
       <GridPane.margin>
          <Insets left="80.0" />
-      </GridPane.margin>
-      <padding>
-         <Insets right="50.0" />
-      </padding></TextField>
+      </GridPane.margin></TextField>
 
     <Label text="Last Name: " GridPane.columnIndex="0" GridPane.rowIndex="1">
       <GridPane.margin>
          <Insets left="10.0" />
       </GridPane.margin></Label>
-    <TextField fx:id="lastName" maxHeight="30.0" maxWidth="60.0" GridPane.rowIndex="1">
+    <TextField fx:id="lastNameT" maxHeight="30.0" maxWidth="60.0" GridPane.rowIndex="1">
       <GridPane.margin>
          <Insets left="80.0" />
       </GridPane.margin></TextField>
@@ -43,36 +40,32 @@
       <GridPane.margin>
          <Insets left="10.0" />
       </GridPane.margin></Label>
-    <TextField fx:id="roofW" maxHeight="30.0" maxWidth="60.0" GridPane.rowIndex="2">
+    <TextField fx:id="roofWT" maxHeight="30.0" maxWidth="60.0" GridPane.rowIndex="2">
       <GridPane.margin>
          <Insets left="80.0" />
-      </GridPane.margin>
-      <padding>
-         <Insets right="50.0" />
-      </padding></TextField>
+      </GridPane.margin></TextField>
 
     <Label text="Roof Height: " GridPane.columnIndex="0" GridPane.rowIndex="3">
       <GridPane.margin>
          <Insets left="10.0" />
       </GridPane.margin></Label>
-    <TextField fx:id="roofH" maxHeight="30.0" maxWidth="60.0" prefHeight="0.0" prefWidth="0.0" GridPane.rowIndex="3">
+    <TextField fx:id="roofHT" maxHeight="30.0" maxWidth="60.0" prefHeight="0.0" prefWidth="0.0" GridPane.rowIndex="3">
       <GridPane.margin>
          <Insets left="80.0" />
-      </GridPane.margin>
-      <padding>
-         <Insets right="50.0" />
-      </padding></TextField>
+      </GridPane.margin></TextField>
 
     <Label alignment="TOP_CENTER" text="Annual power consumption: " textAlignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="4">
       <GridPane.margin>
          <Insets left="10.0" />
       </GridPane.margin></Label>
-    <TextField fx:id="powerConsumptionField" maxHeight="30.0" maxWidth="60.0" prefHeight="0.0" prefWidth="0.0" GridPane.rowIndex="4">
+    <TextField fx:id="powerConsumptionFieldT" maxHeight="30.0" maxWidth="60.0" prefHeight="0.0" prefWidth="0.0" GridPane.rowIndex="4">
       <GridPane.margin>
          <Insets left="170.0" />
+      </GridPane.margin></TextField>
+   <Button fx:id="confirm" mnemonicParsing="false" onAction="#onConfirm" text="Confirm" GridPane.columnIndex="1" GridPane.rowIndex="4">
+      <GridPane.margin>
+         <Insets left="50.0" />
       </GridPane.margin>
-      <padding>
-         <Insets right="50.0" />
-      </padding></TextField>
+   </Button>
 
 </GridPane>
