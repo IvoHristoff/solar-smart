@@ -18,16 +18,11 @@ public class SolarSmartController {
     public TextField roofHT;
     @FXML
     public TextField powerConsT;
-
-
+ // ------------------------------------ //
     public String firstName;
-
     public String lastName;
-
     public double roofW;
-
     public double roofH;
-
     public int powerCons;
 
     public void onConfirm(ActionEvent actionEvent){

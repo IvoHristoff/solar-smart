@@ -22,7 +22,7 @@
       <GridPane.margin>
          <Insets left="10.0" />
       </GridPane.margin></Label>
-    <TextField fx:id="firstNameT" maxHeight="30.0" maxWidth="60.0">
+    <TextField fx:id="firstNameT" maxHeight="20.0" maxWidth="75.0">
       <GridPane.margin>
          <Insets left="80.0" />
       </GridPane.margin></TextField>
@@ -31,7 +31,7 @@
       <GridPane.margin>
          <Insets left="10.0" />
       </GridPane.margin></Label>
-    <TextField fx:id="lastNameT" maxHeight="30.0" maxWidth="60.0" GridPane.rowIndex="1">
+    <TextField fx:id="lastNameT" maxHeight="20.0" maxWidth="75.0" GridPane.rowIndex="1">
       <GridPane.margin>
          <Insets left="80.0" />
       </GridPane.margin></TextField>
@@ -40,7 +40,7 @@
       <GridPane.margin>
          <Insets left="10.0" />
       </GridPane.margin></Label>
-    <TextField fx:id="roofWT" maxHeight="30.0" maxWidth="60.0" GridPane.rowIndex="2">
+    <TextField fx:id="roofWT" maxHeight="20.0" maxWidth="75.0" GridPane.rowIndex="2">
       <GridPane.margin>
          <Insets left="80.0" />
       </GridPane.margin></TextField>
@@ -49,7 +49,7 @@
       <GridPane.margin>
          <Insets left="10.0" />
       </GridPane.margin></Label>
-    <TextField fx:id="roofHT" maxHeight="30.0" maxWidth="60.0" prefHeight="0.0" prefWidth="0.0" GridPane.rowIndex="3">
+    <TextField fx:id="roofHT" maxHeight="20.0" maxWidth="75.0" prefHeight="0.0" prefWidth="0.0" GridPane.rowIndex="3">
       <GridPane.margin>
          <Insets left="80.0" />
       </GridPane.margin></TextField>
@@ -58,14 +58,23 @@
       <GridPane.margin>
          <Insets left="10.0" />
       </GridPane.margin></Label>
-    <TextField fx:id="powerConsT" maxHeight="30.0" maxWidth="60.0" prefHeight="0.0" prefWidth="0.0" GridPane.rowIndex="4">
+    <TextField fx:id="powerConsT" maxHeight="20.0" maxWidth="86.0" prefHeight="0.0" prefWidth="0.0" GridPane.rowIndex="4">
       <GridPane.margin>
-         <Insets left="170.0" />
+         <Insets left="164.0" />
       </GridPane.margin></TextField>
-   <Button fx:id="confirm" mnemonicParsing="false" onAction="#onConfirm" text="Confirm" GridPane.columnIndex="1" GridPane.rowIndex="4">
+   <Button fx:id="confirm" mnemonicParsing="false" onAction="#onConfirm" text="Confirm" GridPane.columnIndex="1" GridPane.rowIndex="3">
       <GridPane.margin>
          <Insets left="50.0" />
       </GridPane.margin>
    </Button>
+   <CheckBox fx:id="noCheck" mnemonicParsing="false" text="No" GridPane.columnIndex="1" GridPane.rowIndex="1">
+      <GridPane.margin>
+         <Insets left="50.0" />
+      </GridPane.margin></CheckBox>
+   <CheckBox fx:id="yesCheck" mnemonicParsing="false" text="Yes" GridPane.columnIndex="1" GridPane.rowIndex="1">
+      <GridPane.margin>
+         <Insets />
+      </GridPane.margin>
+   </CheckBox>
 
 </GridPane>
