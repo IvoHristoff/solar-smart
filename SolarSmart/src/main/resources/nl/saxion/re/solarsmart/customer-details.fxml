@@ -1,35 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<GridPane fx:id="gridPane" prefHeight="250.0" prefWidth="345.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.saxion.re.solarsmart.SolarSmartController">
+<GridPane fx:id="gridPane" prefHeight="351.0" prefWidth="430.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.saxion.re.solarsmart.SolarSmartController">
 
     <columnConstraints>
-        <ColumnConstraints hgrow="SOMETIMES" />
-        <ColumnConstraints hgrow="SOMETIMES" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="275.0" minWidth="185.0" prefWidth="185.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="266.0" minWidth="100.0" prefWidth="190.0" />
     </columnConstraints>
     <rowConstraints>
-        <RowConstraints minHeight="10" vgrow="SOMETIMES" />
-        <RowConstraints minHeight="10" vgrow="SOMETIMES" />
-        <RowConstraints minHeight="10" vgrow="SOMETIMES" />
-        <RowConstraints minHeight="10" vgrow="SOMETIMES" />
-        <RowConstraints minHeight="10" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="55.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="29.0" minHeight="0.0" prefHeight="25.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
     </rowConstraints>
 
-    <Label text="First Name: " GridPane.columnIndex="0" GridPane.rowIndex="0" />
-    <TextField fx:id="firstNameField" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+    <Label text="First Name: " GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <GridPane.margin>
+         <Insets left="5.0" top="5.0" />
+      </GridPane.margin></Label>
+    <TextField fx:id="firstNameT" maxHeight="20.0" maxWidth="75.0">
+      <GridPane.margin>
+         <Insets left="80.0" top="5.0" />
+      </GridPane.margin></TextField>
 
-    <Label text="Last Name: " GridPane.columnIndex="0" GridPane.rowIndex="1" />
-    <TextField fx:id="lastNameField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+    <Label text="Last Name: " GridPane.columnIndex="0" GridPane.rowIndex="1">
+      <GridPane.margin>
+         <Insets bottom="170.0" left="5.0" />
+      </GridPane.margin>
+      <font>
+         <Font name="Inter Regular" size="12.0" />
+      </font></Label>
+    <TextField fx:id="lastNameT" maxHeight="20.0" maxWidth="75.0" GridPane.rowIndex="1">
+      <GridPane.margin>
+         <Insets bottom="168.0" left="80.0" />
+      </GridPane.margin></TextField>
 
-    <Label text="Roof Width" GridPane.columnIndex="0" GridPane.rowIndex="2" />
-    <TextField fx:id="roofWidthField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+    <Label text="Roof Width:" GridPane.rowIndex="1">
+      <GridPane.margin>
+         <Insets bottom="100.0" left="5.0" />
+      </GridPane.margin></Label>
+    <TextField fx:id="roofWT" maxHeight="20.0" maxWidth="75.0" GridPane.rowIndex="1">
+      <GridPane.margin>
+         <Insets bottom="100.0" left="80.0" />
+      </GridPane.margin></TextField>
 
-    <Label text="Roof Height: " GridPane.columnIndex="0" GridPane.rowIndex="3" />
-    <TextField fx:id="roofHeightField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+    <Label text="Roof Height: " GridPane.rowIndex="1">
+      <GridPane.margin>
+         <Insets bottom="30.0" left="5.0" />
+      </GridPane.margin>
+      <font>
+         <Font name="Inter Regular" size="12.0" />
+      </font></Label>
+    <TextField fx:id="roofHT" maxHeight="20.0" maxWidth="75.0" prefHeight="0.0" prefWidth="0.0" GridPane.rowIndex="1">
+      <GridPane.margin>
+         <Insets bottom="30.0" left="80.0" />
+      </GridPane.margin></TextField>
 
-    <Label text="Annual power consumption: " GridPane.columnIndex="0" GridPane.rowIndex="4" />
-    <TextField fx:id="powerConsumptionField" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+    <Label alignment="TOP_CENTER" text="Annual power &#10;consumption: " textAlignment="CENTER" GridPane.rowIndex="1">
+      <GridPane.margin>
+         <Insets left="5.0" top="40.0" />
+      </GridPane.margin>
+      <font>
+         <Font name="Inter Regular" size="12.0" />
+      </font></Label>
+    <TextField fx:id="powerConsT" maxHeight="20.0" maxWidth="86.0" prefHeight="0.0" prefWidth="0.0" GridPane.rowIndex="1">
+      <GridPane.margin>
+         <Insets left="90.0" top="40.0" />
+      </GridPane.margin></TextField>
+   <Button fx:id="confirm" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" onAction="#onConfirm" style="-fx-background-color: orange;" text="Confirm" GridPane.columnIndex="1" GridPane.rowIndex="4">
+      <GridPane.margin>
+         <Insets left="100.0" />
+      </GridPane.margin>
+   </Button>
+   <TextArea editable="false" maxHeight="200.0" maxWidth="200.0" prefHeight="222.0" prefWidth="167.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+   <Label text="Shade on the roof" GridPane.rowIndex="1">
+      <GridPane.margin>
+         <Insets left="62.0" top="105.0" />
+      </GridPane.margin>
+   </Label>
+   <Label text="Does customer prefers&#10; 3-phase connection" textAlignment="CENTER" GridPane.rowIndex="2">
+      <GridPane.margin>
+         <Insets left="50.0" />
+      </GridPane.margin></Label>
+   <RadioButton fx:id="onphaseYes" mnemonicParsing="false" text="Yes" GridPane.rowIndex="3">
+      <GridPane.margin>
+         <Insets left="50.0" />
+      </GridPane.margin>
+      <toggleGroup>
+         <ToggleGroup fx:id="phaseconnector" />
+      </toggleGroup>
+   </RadioButton>
+   <RadioButton fx:id="onphaseNo" mnemonicParsing="false" selected="true" text="No" toggleGroup="$phaseconnector" GridPane.rowIndex="3">
+      <GridPane.margin>
+         <Insets left="130.0" />
+      </GridPane.margin>
+   </RadioButton>
+   <RadioButton fx:id="onshadeNo" mnemonicParsing="false" selected="true" text="No" GridPane.rowIndex="1">
+      <GridPane.margin>
+         <Insets left="130.0" top="160.0" />
+      </GridPane.margin>
+      <toggleGroup>
+         <ToggleGroup fx:id="shade" />
+      </toggleGroup>
+   </RadioButton>
+   <RadioButton fx:id="onshadeYes" mnemonicParsing="false" text="Yes" toggleGroup="$shade" GridPane.rowIndex="1">
+      <GridPane.margin>
+         <Insets left="50.0" top="160.0" />
+      </GridPane.margin>
+   </RadioButton>
 
 </GridPane>
