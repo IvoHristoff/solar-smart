@@ -84,7 +84,7 @@
          <Insets left="62.0" top="105.0" />
       </GridPane.margin>
    </Label>
-   <Label text="Does customer prefers&#10; 3-phase connection" textAlignment="CENTER" GridPane.rowIndex="2">
+   <Label text="Does customer prefer&#10; 3-phase connection" textAlignment="CENTER" GridPane.rowIndex="2">
       <GridPane.margin>
          <Insets left="50.0" />
       </GridPane.margin></Label>
