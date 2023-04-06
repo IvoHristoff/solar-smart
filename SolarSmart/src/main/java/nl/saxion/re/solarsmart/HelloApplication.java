@@ -3,6 +3,7 @@ package nl.saxion.re.solarsmart;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -20,7 +21,7 @@ public class HelloApplication extends Application {
         stage.setScene(scene);
         stage.show();
         ArrayList<Item> itemList = loadPartsList();
-        
+
     }
 
     public static void main(String[] args) {

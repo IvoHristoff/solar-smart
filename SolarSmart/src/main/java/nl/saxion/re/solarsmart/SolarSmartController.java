@@ -13,6 +13,8 @@ import javafx.scene.control.ToggleGroup;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import java.io.PrintStream;
+import java.text.DecimalFormat;
+
 import javafx.scene.control.TextArea;
 
 
@@ -41,6 +43,7 @@ public class SolarSmartController {
     @FXML
     public TextArea calculations;
     // ------------------------------------ //
+    public TextArea textArea;
     public String firstName;
     public String lastName;
     public double roofW;
@@ -53,21 +56,29 @@ public class SolarSmartController {
     public void onConfirm(ActionEvent event) {
 
         firstName = firstNameT.getText();
-        System.out.println("Mr/Ms " + firstName);
+        textArea.appendText("Mr/Ms " + firstName + "\n");
 
         lastName = lastNameT.getText();
-        System.out.println(lastName);
+        textArea.appendText(lastName + "\n");
 
         roofW = Double.parseDouble(roofWT.getText());
-        System.out.println(roofW + "m Width");
+        textArea.appendText(roofW + "m Width" + "\n");
 
         roofH = Double.parseDouble(roofHT.getText());
-        System.out.println(roofH + "m Height");
+        textArea.appendText(roofH + "m Height" + "\n");
 
         powerCons = Integer.parseInt(powerConsT.getText());
-        System.out.println(powerCons + " Watts");
+        textArea.appendText(powerCons + " Watts" + "\n");
 
-        System.out.println("The total roof area is: "+ (roofH*roofW) + " m2.");
+        // ----- formatting the double's numbers after the comma to the second one ---- //
+        double roofArea = roofH*roofW;
+        DecimalFormat df = new DecimalFormat("#.##");
+        String formattedroofArea = df.format(roofArea);
 
+        // -----this code prints in the textarea---- //
+        // !!! (IT DOES SHOW ONLY AFTER THE FIRST TIME THE CONFIRM BUTTON IS CLICKED) !!! //
+        textArea.appendText("The total roof area is: "+ formattedroofArea + " m2." + "\n");
+        textArea = new TextArea();
+        textArea.setEditable(false);
     }
 }
