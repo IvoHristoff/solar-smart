@@ -12,12 +12,12 @@ import java.util.ArrayList;
 public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("customer-details.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("main-menu.fxml"));
 
-        Scene scene = new Scene(fxmlLoader.load(), 420, 380);
+        Scene scene = new Scene(fxmlLoader.load(), 600, 400);
         stage.setResizable(false);
 
-        stage.setTitle("Customer Details");
+        stage.setTitle("Main menu");
         stage.setScene(scene);
         stage.show();
         ArrayList<Item> itemList = loadPartsList();
