@@ -18,7 +18,7 @@
               </rowConstraints>
                <children>
                   <Button fx:id="customerDetailsButton" mnemonicParsing="false" onAction="#switchToCustomerDetails" prefHeight="66.0" prefWidth="300.0" text="Insert customer details" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-                  <Button layoutX="10.0" layoutY="42.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="300.0" text="Parts list" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                  <Button fx:id="partsListButton" layoutX="10.0" layoutY="42.0" mnemonicParsing="false" onAction="#switchToPartsList" prefHeight="66.0" prefWidth="300.0" text="Parts list" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
                   <Button layoutX="10.0" layoutY="42.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="300.0" text="Button" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
                </children>
             </GridPane>

@@ -14,4 +14,9 @@ public class Inverter extends Item{
     public int getPowerRating() {
         return powerRating;
     }
+
+    @Override
+    public String toString() {
+        return "Inverter " + super.toString();
+    }
 }
