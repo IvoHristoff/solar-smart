@@ -2,10 +2,11 @@
 
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<GridPane fx:id="gridPane" prefHeight="351.0" prefWidth="430.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.saxion.re.solarsmart.SolarSmartController">
+<GridPane fx:id="gridPane" prefHeight="437.0" prefWidth="541.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.saxion.re.solarsmart.SolarSmartController">
 
     <columnConstraints>
         <ColumnConstraints hgrow="SOMETIMES" maxWidth="275.0" minWidth="185.0" prefWidth="185.0" />
@@ -22,7 +23,7 @@
 
     <Label text="First Name: " GridPane.columnIndex="0" GridPane.rowIndex="0">
       <GridPane.margin>
-         <Insets left="5.0" top="5.0" />
+         <Insets left="5.0" top="10.0" />
       </GridPane.margin></Label>
     <TextField fx:id="firstNameT" maxHeight="20.0" maxWidth="75.0">
       <GridPane.margin>
@@ -75,10 +76,13 @@
       </GridPane.margin></TextField>
    <Button fx:id="confirm" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" onAction="#onConfirm" style="-fx-background-color: orange;" text="Confirm" GridPane.columnIndex="1" GridPane.rowIndex="4">
       <GridPane.margin>
-         <Insets left="100.0" />
+         <Insets left="150.0" />
       </GridPane.margin>
    </Button>
-   <TextArea fx:id="textArea" editable="false" maxHeight="200.0" maxWidth="200.0" prefHeight="222.0" prefWidth="167.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+   <TextArea fx:id="textArea" editable="false" maxHeight="200.0" maxWidth="234.0" prefHeight="200.0" prefWidth="234.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+      <effect>
+         <Glow />
+      </effect></TextArea>
    <Label text="Shade on the roof" GridPane.rowIndex="1">
       <GridPane.margin>
          <Insets left="62.0" top="105.0" />
@@ -88,31 +92,39 @@
       <GridPane.margin>
          <Insets left="50.0" />
       </GridPane.margin></Label>
-   <RadioButton fx:id="onphaseYes" mnemonicParsing="false" text="Yes" GridPane.rowIndex="3">
+   <RadioButton fx:id="onphaseYes" mnemonicParsing="false" onAction="#onPhaseToggle" text="Yes" GridPane.rowIndex="3">
       <GridPane.margin>
          <Insets left="50.0" />
       </GridPane.margin>
       <toggleGroup>
-         <ToggleGroup fx:id="phaseconnector" />
+         <ToggleGroup fx:id="togglePhase" />
       </toggleGroup>
    </RadioButton>
-   <RadioButton fx:id="onphaseNo" mnemonicParsing="false" selected="true" text="No" toggleGroup="$phaseconnector" GridPane.rowIndex="3">
+   <RadioButton fx:id="onphaseNo" mnemonicParsing="false" onAction="#onPhaseToggle" selected="true" text="No" toggleGroup="$togglePhase" GridPane.rowIndex="3">
       <GridPane.margin>
          <Insets left="130.0" />
       </GridPane.margin>
    </RadioButton>
-   <RadioButton fx:id="onshadeNo" mnemonicParsing="false" selected="true" text="No" GridPane.rowIndex="1">
+   <RadioButton fx:id="onshadeNo" mnemonicParsing="false" onAction="#onShadeToggle" selected="true" text="No" GridPane.rowIndex="1">
       <GridPane.margin>
          <Insets left="130.0" top="160.0" />
       </GridPane.margin>
       <toggleGroup>
-         <ToggleGroup fx:id="shade" />
+         <ToggleGroup fx:id="toggleShade" />
       </toggleGroup>
    </RadioButton>
-   <RadioButton fx:id="onshadeYes" mnemonicParsing="false" text="Yes" toggleGroup="$shade" GridPane.rowIndex="1">
+   <RadioButton fx:id="onshadeYes" mnemonicParsing="false" onAction="#onShadeToggle" text="Yes" toggleGroup="$toggleShade" GridPane.rowIndex="1">
       <GridPane.margin>
          <Insets left="50.0" top="160.0" />
       </GridPane.margin>
    </RadioButton>
+   <Label text="Calculations" textAlignment="CENTER" GridPane.columnIndex="1">
+      <font>
+         <Font name="Inter Regular" size="22.0" />
+      </font>
+      <padding>
+         <Insets left="50.0" />
+      </padding>
+   </Label>
 
 </GridPane>
