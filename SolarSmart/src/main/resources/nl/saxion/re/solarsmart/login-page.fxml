@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.saxion.re.solarsmart.LoginPage">
+    <ImageView fitHeight="210.0" fitWidth="241.0">
+        <image>
+            <Image url="@../../../../CompanyLogo.PNG" />
+        </image>
+      <VBox.margin>
+         <Insets top="50.0" />
+      </VBox.margin>
+    </ImageView>
+
+    <GridPane alignment="CENTER" hgap="10" prefHeight="260.0" prefWidth="600.0" style="-fx-background-color: lightblue;" vgap="10">
+        <Label text="Username:" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+        <TextField fx:id="usernameField" GridPane.rowIndex="2" />
+
+        <Label text="Password:" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+        <PasswordField fx:id="passwordField" GridPane.hgrow="NEVER" GridPane.rowIndex="4" GridPane.vgrow="NEVER" />
+
+        <Button fx:id="loginButton" onAction="#onLoginButtonPressed" style="-fx-background-color: orange;" text="Login" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+
+        <Label fx:id="invalidLoginLabel" managed="false" textAlignment="CENTER" textFill="red" visible="false" GridPane.rowIndex="6" />
+      <columnConstraints>
+         <ColumnConstraints />
+         <ColumnConstraints maxWidth="0.0" minWidth="0.0" prefWidth="0.0" />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      </rowConstraints>
+    </GridPane>
+</VBox>
