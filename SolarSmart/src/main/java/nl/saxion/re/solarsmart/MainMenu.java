@@ -32,4 +32,18 @@ public class MainMenu {
         stage.show();
 
     }
+
+    public void switchToPartsList(ActionEvent event) throws IOException {
+
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("parts-list.fxml"));
+
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(fxmlLoader.load(), 600, 400);
+        stage.setResizable(false);
+
+        stage.setTitle("Parts List");
+        stage.setScene(scene);
+        stage.show();
+
+    }
 }

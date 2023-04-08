@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a1572cf-1bcf-4914-8b4f-411e076349e2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SolarSmart/src/main/java/nl/saxion/re/solarsmart/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/SolarSmart/src/main/java/nl/saxion/re/solarsmart/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SolarSmart/src/main/java/nl/saxion/re/solarsmart/PartsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/SolarSmart/src/main/java/nl/saxion/re/solarsmart/PartsList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SolarSmart/src/main/java/nl/saxion/re/solarsmart/SolarPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/SolarSmart/src/main/java/nl/saxion/re/solarsmart/SolarPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SolarSmart/src/main/java/nl/saxion/re/solarsmart/SolarSmartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SolarSmart/src/main/java/nl/saxion/re/solarsmart/SolarSmartController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SolarSmart/src/main/resources/nl/saxion/re/solarsmart/customer-details.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/SolarSmart/src/main/resources/nl/saxion/re/solarsmart/customer-details.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="4a1572cf-1bcf-4914-8b4f-411e076349e2" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

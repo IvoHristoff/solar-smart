@@ -1,6 +1,4 @@
 package nl.saxion.re.solarsmart;
-
-
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -47,12 +45,12 @@ public class PartsList implements Initializable {
         });
 
     }
-
     public static ArrayList<Item> loadPartsList() {
 
         //Initial parts list hardcoded for prototype
 
         ArrayList<Item> itemList = new ArrayList<>();
+
 
         SolarPanel solarPanel1 = new SolarPanel("SunBurn Factor 50",200, 1.754 , 1.096, 405);
 

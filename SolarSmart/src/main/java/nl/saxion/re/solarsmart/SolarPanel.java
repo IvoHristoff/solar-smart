@@ -34,4 +34,9 @@ public class SolarPanel extends Item{
     public double getGeneratedPower() {
         return generatedPower;
     }
+
+    @Override
+    public String toString() {
+        return "Solar Panel " + super.toString();
+    }
 }
