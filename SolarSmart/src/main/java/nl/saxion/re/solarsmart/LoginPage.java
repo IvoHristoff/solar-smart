@@ -37,18 +37,40 @@ public class LoginPage {
         if (loginInfoCheck(username, password)) {
             openMainMenu(event);
         }
-        else
-        {
-            invalidLoginLabel.setText("Invalid login information, please try again");
+        else {
+
+            invalidLoginLabel.setText("Invalid credentials, please try again");
+            invalidLoginLabel.setVisible(true);
+            invalidLoginLabel.setManaged(true);
+        }
+        if (username.isEmpty() || password.isEmpty()) {
+            invalidLoginLabel.setText("Please enter your credentials fully.");
             invalidLoginLabel.setVisible(true);
             invalidLoginLabel.setManaged(true);
         }
 
 
+    }
 
+    private boolean loginInfoCheck (String username, String password) {
 
+        //Program is hardcoded for admin login credentials, it can be easily modified for having different users
+
+        if (username.equals("admin") && password.equals("admin")){
+
+            return true;
+        }
+        else if (username.equals("user") && password.equals("user")){
+
+            return true;
+        }
+        else {
+            return false;
+        }
 
     }
+
+
 
     private void openMainMenu(ActionEvent event) throws IOException {
 
@@ -63,20 +85,4 @@ public class LoginPage {
         stage.show();
 
     }
-
-
-    private boolean loginInfoCheck (String username, String password) {
-
-        //Program is hardcoded for admin login credentials, it can be easily modified for having different users
-
-        if (username.equals("admin") && password.equals("AdminPassword12345")){
-
-            return true;
-        }
-        else {
-            return false;
-        }
-
-    }
-
 }
