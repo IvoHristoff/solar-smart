@@ -21,26 +21,26 @@
 
     <Label text="First Name: " GridPane.columnIndex="0" GridPane.rowIndex="0">
       <GridPane.margin>
-         <Insets left="5.0" top="50.0" />
+         <Insets left="5.0" />
       </GridPane.margin>
       <font>
          <Font name="Inter Regular" size="12.0" />
       </font></Label>
-    <TextField fx:id="firstNameT" maxHeight="20.0" maxWidth="75.0">
+    <TextField fx:id="firstNameT" maxHeight="20.0" maxWidth="75.0" promptText="Peter">
       <GridPane.margin>
-         <Insets left="80.0" top="50.0" />
+         <Insets left="80.0" />
       </GridPane.margin></TextField>
 
     <Label text="Last Name: " GridPane.columnIndex="0" GridPane.rowIndex="1">
       <GridPane.margin>
-         <Insets bottom="170.0" left="5.0" />
+         <Insets bottom="220.0" left="5.0" />
       </GridPane.margin>
       <font>
          <Font name="Inter Regular" size="12.0" />
       </font></Label>
-    <TextField fx:id="lastNameT" maxHeight="20.0" maxWidth="75.0" GridPane.rowIndex="1">
+    <TextField fx:id="lastNameT" maxHeight="20.0" maxWidth="75.0" promptText="Griffin" GridPane.rowIndex="1">
       <GridPane.margin>
-         <Insets bottom="168.0" left="80.0" />
+         <Insets bottom="220.0" left="80.0" />
       </GridPane.margin></TextField>
 
     <Label text="Roof Width:" GridPane.rowIndex="1">
@@ -50,7 +50,7 @@
       <font>
          <Font name="Inter Regular" size="12.0" />
       </font></Label>
-    <TextField fx:id="roofWT" maxHeight="20.0" maxWidth="75.0" GridPane.rowIndex="1">
+    <TextField fx:id="roofWT" maxHeight="20.0" maxWidth="75.0" promptText="2" GridPane.rowIndex="1">
       <GridPane.margin>
          <Insets bottom="100.0" left="80.0" />
       </GridPane.margin></TextField>
@@ -62,7 +62,7 @@
       <font>
          <Font name="Inter Regular" size="12.0" />
       </font></Label>
-    <TextField fx:id="roofHT" maxHeight="20.0" maxWidth="75.0" prefHeight="0.0" prefWidth="0.0" GridPane.rowIndex="1">
+    <TextField fx:id="roofHT" maxHeight="20.0" maxWidth="75.0" prefHeight="0.0" prefWidth="0.0" promptText="3" GridPane.rowIndex="1">
       <GridPane.margin>
          <Insets bottom="30.0" left="80.0" />
       </GridPane.margin></TextField>
@@ -74,7 +74,7 @@
       <font>
          <Font name="Inter Regular" size="12.0" />
       </font></Label>
-    <TextField fx:id="powerConsT" maxHeight="20.0" maxWidth="86.0" prefHeight="0.0" prefWidth="0.0" GridPane.rowIndex="1">
+    <TextField fx:id="powerConsT" maxHeight="20.0" maxWidth="86.0" prefHeight="0.0" prefWidth="0.0" promptText="1500" GridPane.rowIndex="1">
       <GridPane.margin>
          <Insets left="90.0" top="40.0" />
       </GridPane.margin></TextField>
@@ -86,7 +86,7 @@
          <Font name="Inter Regular" size="12.0" />
       </font>
    </Button>
-   <TextArea fx:id="textArea" editable="false" maxHeight="200.0" maxWidth="234.0" prefHeight="200.0" prefWidth="234.0" style="-fx-background-color: orange;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+   <TextArea fx:id="textArea" editable="false" maxHeight="200.0" maxWidth="234.0" prefHeight="200.0" prefWidth="234.0" promptText="Every calculation before sending the quotation" style="-fx-background-color: orange;" GridPane.columnIndex="1" GridPane.rowIndex="1">
       <effect>
          <Glow />
       </effect>
@@ -104,7 +104,10 @@
    <Label text="Does customer prefer&#10; 3-phase connection" textAlignment="CENTER" GridPane.rowIndex="3">
       <GridPane.margin>
          <Insets bottom="120.0" left="50.0" />
-      </GridPane.margin></Label>
+      </GridPane.margin>
+       <font>
+           <Font name="Inter Regular" size="12.0" />
+       </font></Label>
    <RadioButton fx:id="onphaseYes" mnemonicParsing="false" onAction="#onPhaseToggle" text="Yes" GridPane.rowIndex="3">
       <GridPane.margin>
          <Insets bottom="80.0" left="50.0" top="30.0" />
@@ -167,5 +170,15 @@
          <Font name="Inter Regular" size="12.0" />
       </font>
    </Button>
+   <TextField fx:id="userAddressT" maxHeight="20.0" maxWidth="75.0" prefHeight="25.0" prefWidth="0.0" promptText="America" GridPane.rowIndex="1">
+      <GridPane.margin>
+         <Insets bottom="160.0" left="80.0" />
+      </GridPane.margin>
+   </TextField>
+   <Label prefHeight="17.0" prefWidth="58.0" text="Address:" GridPane.rowIndex="1">
+      <GridPane.margin>
+         <Insets bottom="160.0" left="5.0" />
+      </GridPane.margin>
+   </Label>
 
 </GridPane>

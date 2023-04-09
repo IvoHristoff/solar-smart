@@ -32,6 +32,9 @@ public class GenerateQuotation {
 
     }
 
+    public void setData(Object data) {
+        textArea.appendText(data.toString());
+    }
 
     public void editText() {
         textArea.setEditable(true);
