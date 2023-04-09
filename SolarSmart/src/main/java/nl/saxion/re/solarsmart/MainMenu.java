@@ -20,7 +20,7 @@ public class MainMenu {
 
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         stage.getIcons().add(new Image("CompanyLogo.PNG"));
-        Scene scene = new Scene(fxmlLoader.load(), 600, 600);
+        Scene scene = new Scene(fxmlLoader.load(), 600, 500);
         stage.setResizable(false);
 
         stage.setTitle("Customer details");

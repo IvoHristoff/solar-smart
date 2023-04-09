@@ -12,6 +12,8 @@ import javafx.scene.control.ToggleGroup;
 
 import java.io.IOException;
 import java.text.DecimalFormat;
+import java.time.LocalDate;
+
 import javafx.scene.control.TextArea;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
@@ -48,6 +50,8 @@ public class SolarSmartController {
     public Button confirm = new Button();
     @FXML
     public Button backButton = new Button();
+    @FXML
+    public DatePicker datePicker = new DatePicker();
     /* ------------------------------------ */
     public TextArea textArea;
     public String firstName;
@@ -63,19 +67,23 @@ public class SolarSmartController {
         double panelW = 1.754;
         double panelH = 1.096;
         int panelWatts = 405;
+        textArea.clear();
 
         firstName = firstNameT.getText();
         lastName = lastNameT.getText();
-        textArea.appendText("Mr/Ms " + firstName + " " + lastName + "\n");
+        this.textArea.appendText("Mr/Ms " + firstName + " " + lastName + "\n");
 
         roofW = Double.parseDouble(roofWT.getText());
-        textArea.appendText(roofW + "m Width" + "\n");
+        this.textArea.appendText(roofW + "m Width" + "\n");
 
         roofH = Double.parseDouble(roofHT.getText());
-        textArea.appendText(roofH + "m Height" + "\n");
+        this.textArea.appendText(roofH + "m Height" + "\n");
 
         powerCons = Integer.parseInt(powerConsT.getText());
-        textArea.appendText(powerCons + " Watts" + "\n");
+        this.textArea.appendText(powerCons + " Watts" + "\n");
+
+        // Get the selected date from the DatePicker
+        LocalDate selectedDate = datePicker.getValue();
 
         /* ----- formatting the double's numbers after the comma to the second one ---- */
         double roofArea = roofH*roofW;
@@ -88,11 +96,23 @@ public class SolarSmartController {
         /* for some reason shadeRoof is switched, but it works */
         int kwhPerYear = (int) (numberOfPanels * panelWatts * (this.shadeRoof? 0.8: 0.5));
         /* if button is clicked, then add 3m additional or whatever, else */
-        textArea.appendText("The total roof area is: "+ formattedroofArea + " m2." + "\n");
-        textArea.appendText("Number of panels to fit: "+ numberOfPanels + "\n");
-        textArea.appendText("Power output of the panels: "+ kwhPerYear);
-        textArea = new TextArea();
-        textArea.setEditable(false);
+        this.textArea.appendText("The total roof area is: "+ formattedroofArea + " m2." + "\n");
+        this.textArea.appendText("Number of panels to fit: "+ numberOfPanels + "\n");
+        this.textArea.appendText("Power output of the panels: "+ kwhPerYear + "\n");
+
+
+        // Save the selected date to a variable or database
+        if (selectedDate != null) {
+            // Save the date to a variable or database
+            this.textArea.appendText("Selected Date: " + selectedDate);
+        } else {
+            // The user has not selected a date
+            this.textArea.appendText("No date selected.");
+        }
+
+
+
+
 
     }
     public void onShadeToggle() {
@@ -135,20 +155,28 @@ public class SolarSmartController {
 
     public void onContinue(ActionEvent event) throws IOException {
 
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("generate-quotation.fxml"));
+        if (this.textArea != null) {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("generate-quotation.fxml"));
 
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        stage.getIcons().add(new Image("CompanyLogo.PNG"));
-        Scene scene = new Scene(fxmlLoader.load(), 600, 600);
-        stage.setResizable(false);
+            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            stage.getIcons().add(new Image("CompanyLogo.PNG"));
+            Scene scene = new Scene(fxmlLoader.load(), 600, 500);
+            stage.setResizable(false);
 
-        stage.setTitle("Quotation for Customer");
-        stage.setScene(scene);
-        stage.show();
+            stage.setTitle("Quotation for Customer");
+            stage.setScene(scene);
+            stage.show();
 
+        } else {
+
+            System.out.println("Error");
+
+        }
     }
-
-
-
-
+    public void editText() {
+        textArea.setEditable(true);
+    }
+    public void makeTextAreaEditable(ActionEvent event) {
+        editText();
+    }
 }

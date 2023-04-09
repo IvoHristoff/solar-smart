@@ -9,6 +9,8 @@
       <change beforePath="$PROJECT_DIR$/SolarSmart/src/main/java/nl/saxion/re/solarsmart/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/SolarSmart/src/main/java/nl/saxion/re/solarsmart/MainMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SolarSmart/src/main/java/nl/saxion/re/solarsmart/SolarSmartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SolarSmart/src/main/java/nl/saxion/re/solarsmart/SolarSmartController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SolarSmart/src/main/resources/nl/saxion/re/solarsmart/customer-details.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/SolarSmart/src/main/resources/nl/saxion/re/solarsmart/customer-details.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SolarSmart/src/main/resources/nl/saxion/re/solarsmart/generate-quotation.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/SolarSmart/src/main/resources/nl/saxion/re/solarsmart/generate-quotation.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SolarSmart/src/main/resources/nl/saxion/re/solarsmart/view-order.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/SolarSmart/src/main/resources/nl/saxion/re/solarsmart/view-order.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
