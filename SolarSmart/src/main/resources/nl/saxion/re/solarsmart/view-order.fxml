@@ -4,9 +4,9 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.saxion.re.solarsmart.ViewOrder">
+<AnchorPane maxHeight="600.0" maxWidth="600.0" prefHeight="599.0" prefWidth="600.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.saxion.re.solarsmart.ViewOrder">
    <children>
-      <Button fx:id="backbutton" layoutX="33.0" layoutY="338.0" mnemonicParsing="false" onAction="#switchToLoginPage" prefHeight="36.0" prefWidth="82.0" style="-fx-background-color: orange;" text="Back">
+      <Button fx:id="backbutton" alignment="CENTER" layoutX="33.0" layoutY="541.0" mnemonicParsing="false" onAction="#switchToLoginPage" prefHeight="43.0" prefWidth="82.0" style="-fx-background-color: orange;" text="Back">
          <font>
             <Font name="Inter Regular" size="12.0" />
          </font>
@@ -16,7 +16,7 @@
             <Font size="25.0" />
          </font>
       </Label>
-      <TextArea editable="false" layoutX="200.0" layoutY="58.0" prefHeight="332.0" prefWidth="200.0" promptText="Displaying an email with all the information, after the consultant has confirmed them via customer-details">
+      <TextArea editable="false" layoutX="134.0" layoutY="58.0" prefHeight="426.0" prefWidth="329.0" promptText="Displaying an email with all the information, after the consultant has confirmed them via customer-details">
          <font>
             <Font name="Inter Regular" size="16.0" />
          </font>

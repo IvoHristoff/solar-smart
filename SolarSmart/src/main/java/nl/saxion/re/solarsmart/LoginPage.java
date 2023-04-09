@@ -56,7 +56,7 @@ public class LoginPage {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("main-menu.fxml"));
 
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        Scene scene = new Scene(fxmlLoader.load(), 600, 400);
+        Scene scene = new Scene(fxmlLoader.load(), 600, 600);
         stage.setResizable(false);
 
         stage.setTitle("Main Menu");
@@ -69,7 +69,7 @@ public class LoginPage {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("view-order.fxml"));
 
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        Scene scene = new Scene(fxmlLoader.load(), 600, 400);
+        Scene scene = new Scene(fxmlLoader.load(), 600, 600);
         stage.setResizable(false);
 
         stage.setTitle("View Order");

@@ -7,6 +7,13 @@
     <list default="true" id="4a1572cf-1bcf-4914-8b4f-411e076349e2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SolarSmart/src/main/java/nl/saxion/re/solarsmart/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/SolarSmart/src/main/java/nl/saxion/re/solarsmart/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SolarSmart/src/main/java/nl/saxion/re/solarsmart/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/SolarSmart/src/main/java/nl/saxion/re/solarsmart/MainMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SolarSmart/src/main/java/nl/saxion/re/solarsmart/SolarSmartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SolarSmart/src/main/java/nl/saxion/re/solarsmart/SolarSmartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SolarSmart/src/main/java/nl/saxion/re/solarsmart/ViewOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/SolarSmart/src/main/java/nl/saxion/re/solarsmart/ViewOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SolarSmart/src/main/resources/nl/saxion/re/solarsmart/customer-details.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/SolarSmart/src/main/resources/nl/saxion/re/solarsmart/customer-details.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SolarSmart/src/main/resources/nl/saxion/re/solarsmart/login-page.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/SolarSmart/src/main/resources/nl/saxion/re/solarsmart/login-page.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SolarSmart/src/main/resources/nl/saxion/re/solarsmart/main-menu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/SolarSmart/src/main/resources/nl/saxion/re/solarsmart/main-menu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SolarSmart/src/main/resources/nl/saxion/re/solarsmart/view-order.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/SolarSmart/src/main/resources/nl/saxion/re/solarsmart/view-order.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

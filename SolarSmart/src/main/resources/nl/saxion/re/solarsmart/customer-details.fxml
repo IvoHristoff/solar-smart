@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<GridPane fx:id="gridPane" prefHeight="437.0" prefWidth="541.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.saxion.re.solarsmart.SolarSmartController">
+<GridPane fx:id="gridPane" maxHeight="400.0" maxWidth="600.0" prefHeight="437.0" prefWidth="541.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.saxion.re.solarsmart.SolarSmartController">
 
     <columnConstraints>
         <ColumnConstraints hgrow="SOMETIMES" maxWidth="275.0" minWidth="185.0" prefWidth="185.0" />
