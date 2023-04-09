@@ -9,6 +9,7 @@ import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.ListCell;
 import javafx.scene.control.ListView;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -86,6 +87,7 @@ public class PartsList implements Initializable {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("main-menu.fxml"));
 
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.getIcons().add(new Image("CompanyLogo.PNG"));
         Scene scene = new Scene(fxmlLoader.load(), 600, 600);
         stage.setResizable(false);
 

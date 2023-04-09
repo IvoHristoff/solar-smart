@@ -13,6 +13,7 @@ import javafx.scene.control.ToggleGroup;
 import java.io.IOException;
 import java.text.DecimalFormat;
 import javafx.scene.control.TextArea;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import static java.lang.Math.floor;
@@ -122,6 +123,7 @@ public class SolarSmartController {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("main-menu.fxml"));
 
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.getIcons().add(new Image("CompanyLogo.PNG"));
         Scene scene = new Scene(fxmlLoader.load(), 600, 600);
         stage.setResizable(false);
 
