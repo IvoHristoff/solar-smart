@@ -12,7 +12,7 @@
          </font></TextArea>
       <Button layoutX="34.0" layoutY="456.0" mnemonicParsing="false" onAction="#switchToLoginPage" prefHeight="36.0" prefWidth="70.0" style="-fx-background-color: orange;" text="Log Off" />
       <Button layoutX="268.0" layoutY="454.0" mnemonicParsing="false" onAction="#makeTextAreaEditable" prefHeight="36.0" prefWidth="70.0" style="-fx-background-color: orange;" text="Edit" />
-      <Button layoutX="492.0" layoutY="457.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="70.0" style="-fx-background-color: red;" text="Send" />
+      <Button layoutX="492.0" layoutY="457.0" mnemonicParsing="false" onAction="#onSubmit" prefHeight="36.0" prefWidth="70.0" style="-fx-background-color: red;" text="Send" />
       <Label alignment="TOP_CENTER" layoutX="139.0" layoutY="14.0" prefHeight="25.0" prefWidth="335.0" text="Quotation for customer" textAlignment="CENTER">
          <font>
             <Font name="Inter Regular" size="25.0" />

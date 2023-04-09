@@ -43,4 +43,8 @@ public class GenerateQuotation {
     public void makeTextAreaEditable(ActionEvent event) {
         editText();
     }
+
+    public void onSubmit(ActionEvent event) {
+        Data.setEmail(textArea.getText());
+    }
 }
