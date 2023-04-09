@@ -2,11 +2,19 @@ package nl.saxion.re.solarsmart;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.ToggleGroup;
+
+import java.io.IOException;
 import java.text.DecimalFormat;
 import javafx.scene.control.TextArea;
+import javafx.stage.Stage;
+
 import static java.lang.Math.floor;
 
 
@@ -35,9 +43,10 @@ public class SolarSmartController {
     public RadioButton onphaseYes = new RadioButton();
     @FXML
     public RadioButton onphaseNo = new RadioButton();
-
     @FXML
-    public TextArea calculations;
+    public Button confirm = new Button();
+    @FXML
+    public Button backButton = new Button();
     /* ------------------------------------ */
     public TextArea textArea;
     public String firstName;
@@ -47,6 +56,7 @@ public class SolarSmartController {
     public int powerCons;
     public boolean shadeRoof = true;
     public boolean phaseConnector = false;
+    public Stage stage;
 
     public void onConfirm(ActionEvent event) {
         double panelW = 1.754;
@@ -106,4 +116,22 @@ public class SolarSmartController {
         this.phaseConnector = selectedText.equals("yes");
 
     }
+
+    public void switchToMenu(ActionEvent event) throws IOException {
+
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("main-menu.fxml"));
+
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(fxmlLoader.load(), 600, 600);
+        stage.setResizable(false);
+
+        stage.setTitle("Main menu");
+        stage.setScene(scene);
+        stage.show();
+
+    }
+
+
+
+
 }

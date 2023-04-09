@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<GridPane fx:id="gridPane" prefHeight="437.0" prefWidth="541.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.saxion.re.solarsmart.SolarSmartController">
+<GridPane fx:id="gridPane" maxHeight="400.0" maxWidth="600.0" prefHeight="437.0" prefWidth="541.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.saxion.re.solarsmart.SolarSmartController">
 
     <columnConstraints>
         <ColumnConstraints hgrow="SOMETIMES" maxWidth="275.0" minWidth="185.0" prefWidth="185.0" />
@@ -74,9 +74,9 @@
       <GridPane.margin>
          <Insets left="90.0" top="40.0" />
       </GridPane.margin></TextField>
-   <Button fx:id="confirm" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" onAction="#onConfirm" style="-fx-background-color: orange;" text="Confirm" GridPane.columnIndex="1" GridPane.rowIndex="4">
+   <Button fx:id="confirm" maxHeight="50.0" maxWidth="80.0" mnemonicParsing="false" onAction="#onConfirm" style="-fx-background-color: orange;" text="Confirm" GridPane.columnIndex="1" GridPane.rowIndex="4">
       <GridPane.margin>
-         <Insets left="150.0" />
+         <Insets left="150.0" right="20.0" />
       </GridPane.margin>
    </Button>
    <TextArea fx:id="textArea" editable="false" maxHeight="200.0" maxWidth="234.0" prefHeight="200.0" prefWidth="234.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
@@ -126,5 +126,13 @@
          <Insets left="50.0" />
       </padding>
    </Label>
+   <Button fx:id="backButton" maxHeight="80.0" maxWidth="80.0" mnemonicParsing="false" onAction="#switchToMenu" style="-fx-background-color: orange;" text="Back" GridPane.rowIndex="4">
+      <font>
+         <Font name="Inter Regular" size="12.0" />
+      </font>
+      <GridPane.margin>
+         <Insets left="30.0" />
+      </GridPane.margin>
+   </Button>
 
 </GridPane>

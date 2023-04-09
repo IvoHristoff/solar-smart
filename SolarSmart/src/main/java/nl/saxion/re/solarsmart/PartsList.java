@@ -1,10 +1,17 @@
 package nl.saxion.re.solarsmart;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Scene;
 import javafx.scene.control.ListCell;
 import javafx.scene.control.ListView;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
@@ -14,6 +21,8 @@ public class PartsList implements Initializable {
 
     @FXML
     public ListView partsListView;
+
+    public Stage stage;
 
 
 
@@ -70,4 +79,20 @@ public class PartsList implements Initializable {
         return itemList;
 
     }
+
+
+    public void switchToMenu(ActionEvent event) throws IOException {
+
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("main-menu.fxml"));
+
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(fxmlLoader.load(), 600, 600);
+        stage.setResizable(false);
+
+        stage.setTitle("Main menu");
+        stage.setScene(scene);
+        stage.show();
+
+    }
+
 }
