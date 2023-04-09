@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 
 <VBox alignment="CENTER" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.saxion.re.solarsmart.LoginPage">
-    <ImageView fitHeight="210.0" fitWidth="241.0">
+    <ImageView fitHeight="229.0" fitWidth="241.0">
         <image>
             <Image url="@../../../../CompanyLogo.PNG" />
         </image>
