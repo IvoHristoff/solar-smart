@@ -133,6 +133,21 @@ public class SolarSmartController {
 
     }
 
+    public void onContinue(ActionEvent event) throws IOException {
+
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("generate-quotation.fxml"));
+
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.getIcons().add(new Image("CompanyLogo.PNG"));
+        Scene scene = new Scene(fxmlLoader.load(), 600, 600);
+        stage.setResizable(false);
+
+        stage.setTitle("Quotation for Customer");
+        stage.setScene(scene);
+        stage.show();
+
+    }
+
 
 
 

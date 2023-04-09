@@ -76,7 +76,7 @@
       </GridPane.margin></TextField>
    <Button fx:id="confirm" maxHeight="50.0" maxWidth="80.0" mnemonicParsing="false" onAction="#onConfirm" style="-fx-background-color: orange;" text="Confirm" GridPane.columnIndex="1" GridPane.rowIndex="4">
       <GridPane.margin>
-         <Insets left="150.0" right="20.0" />
+         <Insets left="40.0" right="20.0" />
       </GridPane.margin>
    </Button>
    <TextArea fx:id="textArea" editable="false" maxHeight="200.0" maxWidth="234.0" prefHeight="200.0" prefWidth="234.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
@@ -132,6 +132,11 @@
       </font>
       <GridPane.margin>
          <Insets left="30.0" />
+      </GridPane.margin>
+   </Button>
+   <Button maxHeight="50.0" maxWidth="80.0" mnemonicParsing="false" onAction="#onContinue" prefHeight="38.0" prefWidth="52.0" style="-fx-background-color: orange;" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="4">
+      <GridPane.margin>
+         <Insets left="160.0" />
       </GridPane.margin>
    </Button>
 

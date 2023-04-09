@@ -13,12 +13,6 @@ import java.io.IOException;
 public class MainMenu {
 
     private Stage stage;
-    private Scene scene;
-    private Parent root;
-
-
-
-
 
     public void switchToCustomerDetails(ActionEvent event) throws IOException {
 
