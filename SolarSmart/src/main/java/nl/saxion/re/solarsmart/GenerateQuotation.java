@@ -4,20 +4,19 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class ViewOrder {
-
+public class GenerateQuotation {
     private Stage stage;
+
     @FXML
-    public TextArea quotationView;
+    private TextArea textArea;
+
     public void switchToLoginPage(ActionEvent event) throws IOException {
 
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("login-page.fxml"));
@@ -33,5 +32,15 @@ public class ViewOrder {
 
     }
 
-}
+    public void setData(Object data) {
+        textArea.appendText(data.toString());
+    }
 
+    public void editText() {
+        textArea.setEditable(true);
+    }
+
+    public void makeTextAreaEditable(ActionEvent event) {
+        editText();
+    }
+}

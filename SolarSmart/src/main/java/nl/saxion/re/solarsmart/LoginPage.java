@@ -9,6 +9,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -56,6 +57,7 @@ public class LoginPage {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("main-menu.fxml"));
 
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.getIcons().add(new Image("CompanyLogo.PNG"));
         Scene scene = new Scene(fxmlLoader.load(), 600, 600);
         stage.setResizable(false);
 
@@ -69,6 +71,7 @@ public class LoginPage {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("view-order.fxml"));
 
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.getIcons().add(new Image("CompanyLogo.PNG"));
         Scene scene = new Scene(fxmlLoader.load(), 600, 600);
         stage.setResizable(false);
 

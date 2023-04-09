@@ -6,14 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="4a1572cf-1bcf-4914-8b4f-411e076349e2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SolarSmart/src/main/java/nl/saxion/re/solarsmart/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/SolarSmart/src/main/java/nl/saxion/re/solarsmart/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SolarSmart/src/main/java/nl/saxion/re/solarsmart/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/SolarSmart/src/main/java/nl/saxion/re/solarsmart/MainMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SolarSmart/src/main/java/nl/saxion/re/solarsmart/SolarSmartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SolarSmart/src/main/java/nl/saxion/re/solarsmart/SolarSmartController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SolarSmart/src/main/java/nl/saxion/re/solarsmart/ViewOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/SolarSmart/src/main/java/nl/saxion/re/solarsmart/ViewOrder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SolarSmart/src/main/resources/nl/saxion/re/solarsmart/customer-details.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/SolarSmart/src/main/resources/nl/saxion/re/solarsmart/customer-details.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SolarSmart/src/main/resources/nl/saxion/re/solarsmart/login-page.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/SolarSmart/src/main/resources/nl/saxion/re/solarsmart/login-page.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SolarSmart/src/main/resources/nl/saxion/re/solarsmart/main-menu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/SolarSmart/src/main/resources/nl/saxion/re/solarsmart/main-menu.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SolarSmart/src/main/resources/nl/saxion/re/solarsmart/view-order.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/SolarSmart/src/main/resources/nl/saxion/re/solarsmart/view-order.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SolarSmart/src/main/resources/nl/saxion/re/solarsmart/generate-quotation.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/SolarSmart/src/main/resources/nl/saxion/re/solarsmart/generate-quotation.fxml" afterDir="false" />
+    </list>
+    <list id="52d94fea-4227-42dd-aac6-d4d9ceba448f" name="Changes by alex" comment="">
+      <change beforePath="$PROJECT_DIR$/SolarSmart/src/main/java/nl/saxion/re/solarsmart/GenerateQuotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/SolarSmart/src/main/java/nl/saxion/re/solarsmart/GenerateQuotation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SolarSmart/src/main/java/nl/saxion/re/solarsmart/SolarSmartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SolarSmart/src/main/java/nl/saxion/re/solarsmart/SolarSmartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SolarSmart/src/main/resources/nl/saxion/re/solarsmart/customer-details.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/SolarSmart/src/main/resources/nl/saxion/re/solarsmart/customer-details.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,22 +31,81 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/SolarSmart/src/main/resources/nl/saxion/re/solarsmart/customer-details.fxml">
+      <ranges>
+        <range start1="23" end1="24" start2="23" end2="24" changelist="4a1572cf-1bcf-4914-8b4f-411e076349e2" />
+        <range start1="28" end1="29" start2="28" end2="29" changelist="4a1572cf-1bcf-4914-8b4f-411e076349e2" />
+        <range start1="30" end1="31" start2="30" end2="31" changelist="4a1572cf-1bcf-4914-8b4f-411e076349e2" />
+        <range start1="35" end1="36" start2="35" end2="36" changelist="4a1572cf-1bcf-4914-8b4f-411e076349e2" />
+        <range start1="40" end1="41" start2="40" end2="41" changelist="4a1572cf-1bcf-4914-8b4f-411e076349e2" />
+        <range start1="42" end1="43" start2="42" end2="43" changelist="4a1572cf-1bcf-4914-8b4f-411e076349e2" />
+        <range start1="52" end1="53" start2="52" end2="53" changelist="4a1572cf-1bcf-4914-8b4f-411e076349e2" />
+        <range start1="64" end1="65" start2="64" end2="65" changelist="4a1572cf-1bcf-4914-8b4f-411e076349e2" />
+        <range start1="76" end1="77" start2="76" end2="77" changelist="4a1572cf-1bcf-4914-8b4f-411e076349e2" />
+        <range start1="88" end1="89" start2="88" end2="89" changelist="4a1572cf-1bcf-4914-8b4f-411e076349e2" />
+        <range start1="106" end1="107" start2="106" end2="110" changelist="52d94fea-4227-42dd-aac6-d4d9ceba448f" />
+        <range start1="169" end1="169" start2="172" end2="182" changelist="4a1572cf-1bcf-4914-8b4f-411e076349e2" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/SolarSmart/src/main/java/nl/saxion/re/solarsmart/SolarSmartController.java">
+      <ranges>
+        <range start1="6" end1="7" start2="6" end2="6" changelist="52d94fea-4227-42dd-aac6-d4d9ceba448f" />
+        <range start1="26" end1="26" start2="25" end2="27" changelist="4a1572cf-1bcf-4914-8b4f-411e076349e2" />
+        <range start1="56" end1="56" start2="57" end2="58" changelist="52d94fea-4227-42dd-aac6-d4d9ceba448f" />
+        <range start1="60" end1="62" start2="62" end2="64" changelist="52d94fea-4227-42dd-aac6-d4d9ceba448f" />
+        <range start1="64" end1="64" start2="66" end2="81" changelist="4a1572cf-1bcf-4914-8b4f-411e076349e2" />
+        <range start1="66" end1="70" start2="83" end2="85" changelist="52d94fea-4227-42dd-aac6-d4d9ceba448f" />
+        <range start1="71" end1="74" start2="86" end2="91" changelist="52d94fea-4227-42dd-aac6-d4d9ceba448f" />
+        <range start1="76" end1="77" start2="93" end2="94" changelist="52d94fea-4227-42dd-aac6-d4d9ceba448f" />
+        <range start1="79" end1="80" start2="96" end2="97" changelist="52d94fea-4227-42dd-aac6-d4d9ceba448f" />
+        <range start1="81" end1="83" start2="98" end2="100" changelist="52d94fea-4227-42dd-aac6-d4d9ceba448f" />
+        <range start1="84" end1="86" start2="101" end2="101" changelist="52d94fea-4227-42dd-aac6-d4d9ceba448f" />
+        <range start1="88" end1="89" start2="103" end2="104" changelist="52d94fea-4227-42dd-aac6-d4d9ceba448f" />
+        <range start1="92" end1="102" start2="107" end2="109" changelist="4a1572cf-1bcf-4914-8b4f-411e076349e2" />
+        <range start1="103" end1="112" start2="110" end2="116" changelist="4a1572cf-1bcf-4914-8b4f-411e076349e2" />
+        <range start1="114" end1="116" start2="118" end2="119" changelist="52d94fea-4227-42dd-aac6-d4d9ceba448f" />
+        <range start1="117" end1="117" start2="120" end2="126" changelist="52d94fea-4227-42dd-aac6-d4d9ceba448f" />
+        <range start1="118" end1="119" start2="127" end2="128" changelist="52d94fea-4227-42dd-aac6-d4d9ceba448f" />
+        <range start1="125" end1="126" start2="134" end2="135" changelist="52d94fea-4227-42dd-aac6-d4d9ceba448f" />
+        <range start1="136" end1="137" start2="145" end2="146" changelist="52d94fea-4227-42dd-aac6-d4d9ceba448f" />
+        <range start1="156" end1="156" start2="165" end2="166" changelist="52d94fea-4227-42dd-aac6-d4d9ceba448f" />
+        <range start1="157" end1="159" start2="167" end2="168" changelist="4a1572cf-1bcf-4914-8b4f-411e076349e2" />
+        <range start1="160" end1="164" start2="169" end2="200" changelist="4a1572cf-1bcf-4914-8b4f-411e076349e2" />
+        <range start1="165" end1="168" start2="201" end2="204" changelist="52d94fea-4227-42dd-aac6-d4d9ceba448f" />
+        <range start1="169" end1="174" start2="205" end2="205" changelist="4a1572cf-1bcf-4914-8b4f-411e076349e2" />
+        <range start1="175" end1="175" start2="206" end2="207" changelist="52d94fea-4227-42dd-aac6-d4d9ceba448f" />
+        <range start1="178" end1="178" start2="210" end2="211" changelist="52d94fea-4227-42dd-aac6-d4d9ceba448f" />
+        <range start1="181" end1="181" start2="214" end2="247" changelist="4a1572cf-1bcf-4914-8b4f-411e076349e2" />
+      </ranges>
+    </file>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2O0FKYJL8ElRp687WqS3jXDzPqh" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/School files/OOP/solar-smart/SolarSmart&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "last_opened_file_path": "F:/School files/OOP/solar-smart/SolarSmart"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\hrist\Documents\projects\solar-smart\SolarSmart\src\main\resources" />
+      <recent name="C:\Users\hrist\Documents\projects\solar-smart\SolarSmart\src\main\resources\nl\saxion\re\solarsmart" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

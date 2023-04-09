@@ -11,12 +11,12 @@
             <Font name="Inter Regular" size="12.0" />
          </font>
       </Button>
-      <Label alignment="TOP_CENTER" layoutX="-1.0" layoutY="22.0" prefHeight="36.0" prefWidth="600.0" text="View Your Order" textAlignment="CENTER">
+      <Label alignment="TOP_CENTER" layoutX="-1.0" layoutY="15.0" prefHeight="43.0" prefWidth="600.0" style="-fx-alignment: center;" text="View Your Order" textAlignment="CENTER">
          <font>
             <Font size="25.0" />
          </font>
       </Label>
-      <TextArea editable="false" layoutX="134.0" layoutY="58.0" prefHeight="426.0" prefWidth="329.0" promptText="Displaying an email with all the information, after the consultant has confirmed them via customer-details">
+      <TextArea editable="false" layoutX="134.0" layoutY="58.0" prefHeight="426.0" prefWidth="329.0" promptText="Order is still in process of making..." style="-fx-background-color: orange;">
          <font>
             <Font name="Inter Regular" size="16.0" />
          </font>

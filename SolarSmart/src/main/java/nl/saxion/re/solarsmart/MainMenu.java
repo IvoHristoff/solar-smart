@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -12,19 +13,14 @@ import java.io.IOException;
 public class MainMenu {
 
     private Stage stage;
-    private Scene scene;
-    private Parent root;
-
-
-
-
 
     public void switchToCustomerDetails(ActionEvent event) throws IOException {
 
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("customer-details.fxml"));
 
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        Scene scene = new Scene(fxmlLoader.load(), 600, 400);
+        stage.getIcons().add(new Image("CompanyLogo.PNG"));
+        Scene scene = new Scene(fxmlLoader.load(), 600, 500);
         stage.setResizable(false);
 
         stage.setTitle("Customer details");
@@ -38,6 +34,7 @@ public class MainMenu {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("parts-list.fxml"));
 
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.getIcons().add(new Image("CompanyLogo.PNG"));
         Scene scene = new Scene(fxmlLoader.load(), 600, 600);
         stage.setResizable(false);
 
@@ -51,6 +48,7 @@ public class MainMenu {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("login-page.fxml"));
 
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.getIcons().add(new Image("CompanyLogo.PNG"));
         Scene scene = new Scene(fxmlLoader.load(), 600, 600);
         stage.setResizable(false);
 
