@@ -18,6 +18,11 @@ public class ViewOrder {
     private Stage stage;
     @FXML
     public TextArea quotationView;
+
+    public void initialize() {
+        quotationView.setText(Data.getEmail());
+    }
+
     public void switchToLoginPage(ActionEvent event) throws IOException {
 
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("login-page.fxml"));

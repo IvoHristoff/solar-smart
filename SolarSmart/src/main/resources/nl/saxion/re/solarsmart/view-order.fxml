@@ -16,7 +16,7 @@
             <Font size="25.0" />
          </font>
       </Label>
-      <TextArea editable="false" layoutX="134.0" layoutY="58.0" prefHeight="426.0" prefWidth="329.0" promptText="Order is still in process of making..." style="-fx-background-color: orange;">
+      <TextArea fx:id="quotationView" editable="false" layoutX="134.0" layoutY="58.0" prefHeight="426.0" prefWidth="329.0" promptText="Order is still in process of making..." style="-fx-background-color: orange;">
          <font>
             <Font name="Inter Regular" size="16.0" />
          </font>
